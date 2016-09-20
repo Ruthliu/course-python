@@ -5,5 +5,5 @@ RUN bash --login -c "\
 	pip install git+https://github.com/openml/openml-python.git"
 RUN bash --login -c "\
 	pip install RISE && \
-	jupyter-nbextension install rise --py --system && \
+	jupyter-nbextension install rise --py --user && \
 	jupyter-nbextension enable rise"
